@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -133,6 +134,39 @@ button:hover {
   .overlay, .raw-box { padding:18px; margin:18px; }
   h1 { font-size:22px; }
 }
+
+.support-btn {
+  width: 180px;            /* diminui a largura */
+  padding: 10px 0;         /* diminui a altura */
+  font-size: 16px;         /* diminui a fonte */
+  margin-top: 15px;
+  font-weight: bold;
+  font-family: 'Cinzel', serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  border: 2px solid #8a0000;
+  border-radius: 12px;
+  cursor: pointer;
+  background: linear-gradient(160deg, #200000, #5a0000 60%, #250000);
+  position: relative;
+  overflow: hidden;
+  transition: 0.25s ease-in-out;
+}
+
+.support-btn:hover {
+  transform: scale(1.06);
+  border-color: #ff3b3b;
+  background: linear-gradient(160deg, #2a0000, #7a0000 60%, #300000);
+  box-shadow: 0 0 25px #ff0000;
+}
+
+.support-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 #twitch-box {
   position: fixed;
@@ -283,5 +317,10 @@ function calcRawHour() {
     height="100%">
   </iframe>
 </div>
+<footer id="site-footer" style="padding:24px 12px; text-align:center;">
+  <button class="support-btn" onclick="window.open('https://streamelements.com/akenodev/tip', '_blank')">
+    Support me ❤️
+  </button>
+</footer>
 </body>
 </html>
